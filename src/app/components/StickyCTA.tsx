@@ -11,14 +11,14 @@ export default function StickyCTA() {
           <div className="flex items-center gap-3">
             <span className="animate-pulse h-3 w-3 bg-amber-400 rounded-full"></span>
             <p className="text-sm font-bold text-white">
-              Formation Consultant Juridique (Présentiel & En ligne) • <span className="text-amber-400">03-05 Août</span>
+              Formation Consultant Juridique (Présentiel & En ligne) • <span className="text-amber-400">03 au 07 Août 2026</span>
             </p>
           </div>
           <a
             href={WHATSAPP_GROUP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-5 py-2 rounded-lg text-sm transition shadow-lg shadow-amber-500/20"
+            className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-5 py-2 rounded-lg text-sm transition shadow-lg shadow-amber-500/20 active:scale-95"
           >
             Rejoindre le Groupe WhatsApp Gratuitement →
           </a>
