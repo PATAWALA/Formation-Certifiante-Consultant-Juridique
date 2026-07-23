@@ -65,29 +65,29 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 6. GARANTIES / ARGUMENTS CLÉS */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-slate-800/80 max-w-3xl mx-auto text-left">
-        <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
-          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-          <p className="text-xs text-slate-300 leading-snug">
-            <strong className="text-white block">Cas Réels du Bénin</strong> Analyse et rédaction en direct.
-          </p>
-        </div>
+      {/* ARGUMENTS CLÉS - UNIVERSELS & TOUS PUBLICS */}
+<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-slate-800/80 max-w-3xl mx-auto text-left">
+  <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+    <p className="text-xs text-slate-300 leading-snug">
+      <strong className="text-white block">Cas Pratiques & Réels</strong> Analyse et rédaction concrète sur des dossiers en direct.
+    </p>
+  </div>
 
-        <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
-          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-          <p className="text-xs text-slate-300 leading-snug">
-            <strong className="text-white block">Boîte à Outils Fournie</strong> Clé USB avec +100 contrats éditables.
-          </p>
-        </div>
+  <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+    <p className="text-xs text-slate-300 leading-snug">
+      <strong className="text-white block">Boîte à Outils Fournie</strong> Clé USB avec +100 contrats & actes prêts à l'emploi.
+    </p>
+  </div>
 
-        <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
-          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-          <p className="text-xs text-slate-300 leading-snug">
-            <strong className="text-white block">Attestation Officielle</strong> Validez vos compétences juridiques.
-          </p>
-        </div>
-      </div>
+  <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+    <p className="text-xs text-slate-300 leading-snug">
+      <strong className="text-white block">Attestation Officielle</strong> Validez et crédibilisez vos compétences.
+    </p>
+  </div>
+</div>
 
     </section>
   );
