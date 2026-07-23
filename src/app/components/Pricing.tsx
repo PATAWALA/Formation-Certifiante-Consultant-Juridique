@@ -54,22 +54,29 @@ export default function Pricing() {
 
         </div>
 
-        {/* L'ANCRAGE DE VALEUR DU PRIX */}
+        {/* L'ANCRAGE DE VALEUR DU PRIX - MISE À JOUR ICI */}
         <div className="bg-slate-950 p-6 rounded-2xl border border-amber-500/30 mb-8 space-y-4">
           <div className="text-center">
-            <p className="text-xs text-slate-400 uppercase tracking-widest">Valeur totale du Pack Praticien : <span className="line-through text-slate-500">150 000 FCFA</span></p>
-            <div className="flex items-center justify-center gap-2 mt-1">
-              <span className="text-3xl sm:text-4xl font-black text-white">35 000 FCFA</span>
-              <span className="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-full font-bold">
-                Paiement le 1er jour
-              </span>
+            <p className="text-xs text-slate-400 uppercase tracking-widest mb-2">Valeur totale du Pack : <span className="line-through text-slate-500">150 000 FCFA</span></p>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-2">
+              <div className="bg-slate-900 border border-slate-700 rounded-xl p-3 w-full sm:w-auto">
+                <p className="text-[11px] text-slate-400 uppercase font-bold">Frais d'inscription</p>
+                <p className="text-xl font-black text-white">5 000 FCFA</p>
+              </div>
+              <span className="text-amber-500 font-black hidden sm:block">+</span>
+              <div className="bg-slate-900 border border-amber-500/50 rounded-xl p-3 w-full sm:w-auto shadow-lg shadow-amber-500/10">
+                <p className="text-[11px] text-amber-400 uppercase font-bold">Frais de participation</p>
+                <p className="text-xl font-black text-amber-400">45 000 FCFA</p>
+              </div>
             </div>
-            <p className="text-[11px] text-slate-400 mt-2">
-              Pré-inscription gratuite en ligne. Vous ne réglez vos frais d'accès que sur place le 27 Juillet.
+            
+            <p className="text-[12px] text-slate-400 mt-4 max-w-lg mx-auto">
+              Rejoignez le groupe WhatsApp gratuitement pour valider votre pré-inscription. Les modalités de règlement vous seront communiquées à l'intérieur.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300 pt-2 border-t border-slate-900">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300 pt-4 border-t border-slate-900 mt-4">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Accès aux 15h d'atelier pratique</span>
