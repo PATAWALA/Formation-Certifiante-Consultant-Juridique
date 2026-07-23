@@ -7,11 +7,11 @@ export default function Hero() {
     <section className="relative pt-24 md:pt-32 pb-16 px-6 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         
-        {/* Badge d'urgence & Modalities */}
+        {/* Badge d'urgence & Horaires */}
         <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/40 px-4 py-2 rounded-full mb-6">
           <span className="h-2.5 w-2.5 bg-amber-400 rounded-full animate-ping"></span>
           <span className="text-amber-400 text-xs md:text-sm font-bold uppercase tracking-wider">
-            Formation Immersion • 03 au 05 Août 2026 (Présentiel à Cotonou & En Ligne)
+            5 Jours • 27 au 31 Juillet 2026 • Cours du soir (19h - 22h)
           </span>
         </div>
 
@@ -24,14 +24,14 @@ export default function Hero() {
         </h1>
 
         <p className="text-slate-300 text-base md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-          Le marché du travail n'attend pas la théorie. En 3 jours intensifs, apprenez à <strong className="text-white">rédiger des avis juridiques professionnels</strong>, conseiller avec assurance et bâtir votre propre réseau de clients.
+          Le marché du travail n'attend pas la théorie. En 5 soirs intensifs, apprenez à <strong className="text-white">rédiger des avis juridiques professionnels</strong>, conseiller avec assurance et bâtir votre propre portefeuille de clients.
         </p>
 
         {/* Bonus irrésistibles */}
         <div className="flex flex-wrap justify-center gap-3 text-xs md:text-sm font-semibold text-slate-300 mb-10">
-          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">🌐 Disponible En Ligne & En Présentiel</span>
-          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">📜 Certificat de Fin de Formation</span>
-          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">🔑 Clé USB offertes : +100 Modèles d'actes</span>
+          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">🌙 Cours du Soir (19h - 22h)</span>
+          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">🔑 Clé USB Offerte (+100 Actes)</span>
+          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">📜 Certificat Inclus</span>
         </div>
 
         {/* CTA Ultime */}
@@ -45,7 +45,7 @@ export default function Hero() {
             👉 Rejoindre le Groupe WhatsApp Gratuitement
           </a>
         </div>
-        <p className="text-slate-500 text-xs mt-3">⚡ Accès immédiat au groupe d'information sans engagement.</p>
+        <p className="text-slate-500 text-xs mt-3">⚡ Accès direct aux informations et à la réservation de place.</p>
       </div>
     </section>
   );
