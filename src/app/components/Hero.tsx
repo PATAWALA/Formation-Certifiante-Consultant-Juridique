@@ -1,52 +1,96 @@
+
+
 import React from 'react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, MapPin } from 'lucide-react';
 
 export default function Hero() {
   const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/DzaYb6Z5T0XLcct2UeeqDC";
 
   return (
-    <section className="relative pt-24 md:pt-32 pb-16 px-6 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white overflow-hidden">
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        
-        {/* Badge d'urgence & Horaires */}
-        <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/40 px-4 py-2 rounded-full mb-6">
-          <span className="h-2.5 w-2.5 bg-amber-400 rounded-full animate-ping"></span>
-          <span className="text-amber-400 text-xs md:text-sm font-bold uppercase tracking-wider">
-            5 Jours • 27 au 31 Juillet 2026 • Cours du soir (19h - 22h)
-          </span>
-        </div>
-
-        {/* Titre choc émotionnel */}
-        <h1 className="text-3xl md:text-6xl font-black text-white leading-tight mb-6">
-          Ne laissez plus votre diplôme de Droit <br className="hidden md:block"/>
-          <span className="bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent">
-            dormir dans un tiroir.
-          </span>
-        </h1>
-
-        <p className="text-slate-300 text-base md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-          Le marché du travail n'attend pas la théorie. En 5 soirs intensifs, apprenez à <strong className="text-white">rédiger des avis juridiques professionnels</strong>, conseiller avec assurance et bâtir votre propre portefeuille de clients.
-        </p>
-
-        {/* Bonus irrésistibles */}
-        <div className="flex flex-wrap justify-center gap-3 text-xs md:text-sm font-semibold text-slate-300 mb-10">
-          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">🌙 Cours du Soir (19h - 22h)</span>
-          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">🔑 Clé USB Offerte (+100 Actes)</span>
-          <span className="bg-slate-800/90 px-3.5 py-2 rounded-xl border border-slate-700 text-amber-400">📜 Certificat Inclus</span>
-        </div>
-
-        {/* CTA Ultime */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href={WHATSAPP_GROUP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-8 py-4.5 rounded-2xl text-lg transition-all transform hover:scale-105 shadow-xl shadow-amber-500/25"
-          >
-            👉 Rejoindre le Groupe WhatsApp Gratuitement
-          </a>
-        </div>
-        <p className="text-slate-500 text-xs mt-3">⚡ Accès direct aux informations et à la réservation de place.</p>
+    <section className="relative pt-12 pb-8 px-4 max-w-5xl mx-auto text-center space-y-6">
+      
+      {/* 1. BADGE D'URGENCE & DATES DÉCALÉES */}
+      <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-4 py-2 rounded-full backdrop-blur-md">
+        <span className="h-2.5 w-2.5 bg-amber-400 rounded-full animate-ping shrink-0"></span>
+        <span className="text-amber-400 text-xs sm:text-sm font-black uppercase tracking-wider">
+          Prochaine Session : 03 au 07 Août 2026 • Cours du Soir (19h - 22h)
+        </span>
       </div>
+
+      {/* 2. TITRE ACCROCHEUR (PRACTITIONER HOOK) */}
+      <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white leading-tight tracking-tight max-w-4xl mx-auto">
+        Maîtrisez la Rédaction d'Actes & la Pratique Juridique en <span className="bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent">5 Soirs Intensifs</span>
+      </h1>
+
+      {/* 3. SOUS-TITRE DE VALEUR */}
+      <p className="text-slate-300 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        Passez de la théorie académique à la maîtrise concrète. Repartez avec votre <strong className="text-white">Clé USB (+100 modèles d'actes)</strong> et votre <strong className="text-white">Certificat Officiel</strong>.
+      </p>
+
+      {/* 4. LOCALISATION & FORMAT */}
+      <div className="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-slate-400 pt-1">
+        <span className="flex items-center gap-1.5 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-slate-200">
+          <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
+          <span>Présentiel à Cotonou (Vodjè)</span>
+        </span>
+        <span className="flex items-center gap-1.5 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-slate-200">
+          <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
+          <span>Option En Ligne disponible</span>
+        </span>
+      </div>
+
+      {/* 5. BLOC CTA & ANCRAGE TARIF (5.000 + 45.000) */}
+      <div className="pt-4 max-w-md mx-auto space-y-4">
+        <a 
+          href={WHATSAPP_GROUP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-black px-8 py-4 rounded-2xl text-base sm:text-lg transition shadow-2xl shadow-amber-500/20 active:scale-95 w-full"
+        >
+          <span>💬 Rejoindre le Groupe WhatsApp</span>
+          <ArrowRight className="w-5 h-5" />
+        </a>
+
+        {/* Détail du tarif sous le bouton principal */}
+        <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-3 flex items-center justify-between text-xs">
+          <span className="text-slate-400">Investissement :</span>
+          <div className="font-bold text-slate-200">
+            <span>Inscription : <strong className="text-white">5.000 F</strong></span>
+            <span className="mx-1.5 text-slate-600">|</span>
+            <span>Participation : <strong className="text-amber-400">45.000 F</strong></span>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
+          <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>Pré-inscription sans engagement immédiat</span>
+        </div>
+      </div>
+
+      {/* 6. TROIS ARGUMENTS FLASH */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-slate-800/80 max-w-3xl mx-auto text-left">
+        <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+          <p className="text-xs text-slate-300 leading-snug">
+            <strong className="text-white block">Cas Réels & Pratiques</strong> Exemples concrets du marché béninois.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+          <p className="text-xs text-slate-300 leading-snug">
+            <strong className="text-white block">Kit Praticien Inclus</strong> Clé USB avec +100 contrats & actes prêt à l'emploi.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-2.5 bg-slate-900/50 p-3 rounded-xl border border-slate-800">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+          <p className="text-xs text-slate-300 leading-snug">
+            <strong className="text-white block">Réseau & Attestation</strong> Attestation officielle délivrée à la fin.
+          </p>
+        </div>
+      </div>
+
     </section>
   );
 }
